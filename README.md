@@ -1,6 +1,6 @@
 # Binary-Search-Tree
 Java implementation of a Binary Search Tree. All basic operations available.
--------------------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------
 # Contains 2 Classes.
 1. BST
 		- Contains a rootNode property
@@ -9,26 +9,23 @@ Java implementation of a Binary Search Tree. All basic operations available.
 		- Just a container for each individual node in the binary search tree. 
 		- Has 3 properties : Key, LeftChild and rightChild.
 
--------------------------------------------------------------------------------------------------------------------------------------------------
-# 
-Adding a node to a BST :
+------------------------------------------------------------------------------------------------------------------------------
+# Adding a node to a BST :
 
 1. Check if tree is empty :
 2. If yes, set the node as root and return.
 3. If no, Compare the node.key to the currentNode and move to the left subtree if node.key < currentNode.key, else move to right subtree.
 	 -> Continue this recursively, till you reach a leaf node. Insert the node here.
 	 
--------------------------------------------------------------------------------------------------------------------------------------------------
-# 
-Searching for a Node in a BST:
+------------------------------------------------------------------------------------------------------------------------------
+# Searching for a Node in a BST:
 
 1. Initial null check.
 2. Compare the node.key to every node.key (starting from root). If node.key < currentNode.key move to the left subtree, else move to right subtree.
 3. Repeat till you either find the node (Return true), or reach a null pointer(return false).
 
--------------------------------------------------------------------------------------------------------------------------------------------------
-# 
-Removing a Node from the BST:
+------------------------------------------------------------------------------------------------------------------------------
+# Removing a Node from the BST:
 
 1. Locate the node to be removed. (Use search)
 2. We have to handle 3 cases.
@@ -43,9 +40,9 @@ Removing a Node from the BST:
         	 So, now make the left child of the candidate = the left child of the replaced node.
         d) finally, make the replaced node's parent point to the candidate. (Skip if replaced node is root).
 				
--------------------------------------------------------------------------------------------------------------------------------------------------
-# 
-Traversals - Usual Inorder,preorder and postorder.
+------------------------------------------------------------------------------------------------------------------------------
+# Traversals - Usual Inorder,preorder and postorder.
+------------------------------------------------------------------------------------------------------------------------------
 		
 
 
