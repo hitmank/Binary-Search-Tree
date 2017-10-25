@@ -32,10 +32,10 @@ Java implementation of a Binary Search Tree. All basic operations available.
     1. If the node is a leaf. -> Then simple, depending on which child it is, make the parents child node property = null
     2. If the node has one child. -> simple again. depending on which child it is, make the parents child node property point to the nodes one child.
     3. If the node has 2 children.
-        a) For the given node, find a replacement from its right subtree. This would be the smallest element in the right subtree.(i.e traverse along the left childs of the right-subtree)
+    	a) For the given node, find a replacement from its right subtree. This would be the smallest element in the right subtree.(i.e traverse along the left childs of the right-subtree)
         b) Call this as the 'candidate node'. (One property that this candidate node has is that, it does not have a left child. It may only have a right child. or no children at all.)
-        	 Now, depending on whether the  candidate node was a left or right child of its parent, Make the candidate node's parent child property point to the candidate nodes right child (null if it doesnt have one)
-        	 Then, make the candidate's rightChild = the right child of the node you are going to replace.
+	Now, depending on whether the  candidate node was a left or right child of its parent, Make the candidate node's parent child property point to the candidate nodes right child (null if it doesnt have one)
+	Then, make the candidate's rightChild = the right child of the node you are going to replace.
         c) Now, effectively you have removed the node and replaced it with the candidate. however, the candidate is only linked to the right subtree of the replaced node.
         	 So, now make the left child of the candidate = the left child of the replaced node.
         d) finally, make the replaced node's parent point to the candidate. (Skip if replaced node is root).
